@@ -1,0 +1,1 @@
+import{j as s,A as l}from"./index-Bwrw6wLV.js";function n({label:e,value:a,note:i,accent:r=!1}){return s.jsxs("article",{className:`kpi ${r?"accent":""}`,children:[s.jsxs("div",{className:"kpi-label",children:[e,s.jsx(l,{size:14,"aria-hidden":"true"})]}),s.jsx("p",{className:"kpi-value",children:a}),s.jsx("p",{className:"kpi-note",children:i})]})}export{n as K};
