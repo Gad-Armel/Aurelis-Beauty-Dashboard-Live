@@ -1,0 +1,181 @@
+/* Mobile finishing layer for the published Beauty BI build. */
+@media (max-width: 760px) {
+  html,
+  body {
+    min-width: 320px;
+    overflow-x: clip;
+    scroll-padding-top: 68px;
+  }
+
+  .shell,
+  .shell.collapsed {
+    width: 100%;
+    min-width: 0;
+    min-height: 100dvh;
+  }
+
+  .sidebar {
+    width: min(300px, 88vw);
+    max-width: 88vw;
+    min-height: 100dvh;
+    padding-top: calc(14px + env(safe-area-inset-top));
+    padding-bottom: calc(14px + env(safe-area-inset-bottom));
+  }
+
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    height: 60px;
+    min-width: 0;
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+  }
+
+  .breadcrumb {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .top-actions {
+    flex: 0 0 auto;
+    gap: 6px;
+  }
+
+  .icon-button,
+  .mobile-toggle,
+  .mobile-close,
+  .top-actions button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  main {
+    width: 100%;
+    min-width: 0;
+    padding: 18px 12px calc(28px + env(safe-area-inset-bottom));
+  }
+
+  .page-heading {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .page-heading h1,
+  h1 {
+    font-size: clamp(24px, 6vw, 31px);
+    line-height: 1.15;
+  }
+
+  .filterbar {
+    gap: 9px;
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .filterbar input,
+  .filterbar select,
+  .filterbar button,
+  .search input {
+    min-height: 44px;
+    font-size: 16px;
+  }
+
+  .kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .kpi {
+    min-width: 0;
+    padding: 14px 12px;
+    border-radius: 12px;
+  }
+
+  .kpi-value {
+    font-size: clamp(19px, 5.8vw, 24px);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+  }
+
+  .dashboard-grid,
+  .two-col {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  .panel {
+    min-width: 0;
+    padding: 17px 14px;
+    border-radius: 12px;
+  }
+
+  .panel-heading {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .chart {
+    width: 100%;
+    min-width: 0;
+    height: 250px;
+  }
+
+  .table-wrap {
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .salon-view-switcher {
+    align-items: stretch;
+    gap: 12px;
+    margin: 0 0 16px;
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  .salon-view-copy {
+    min-width: 0;
+    margin-right: 0;
+  }
+
+  .salon-view-switcher button,
+  .salon-view-switcher select {
+    min-height: 44px;
+    max-width: 100%;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+@media (max-width: 380px) {
+  main {
+    padding-right: 9px;
+    padding-left: 9px;
+  }
+
+  .kpi-grid {
+    gap: 8px;
+  }
+
+  .kpi {
+    padding: 12px 10px;
+  }
+
+  .panel {
+    padding: 15px 11px;
+  }
+
+  .top-actions {
+    gap: 3px;
+  }
+}
